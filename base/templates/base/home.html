@@ -1,0 +1,13 @@
+{% if loggedin %}
+    Loggedin
+{#    <a href="{% url 'logout' %}">Log out</a>#}
+{% else %}
+    Not Loggedin
+{#    {% url 'django.contrib.auth.views.login' %}#}
+    {% url 'base:views.login' %}
+{#    <a href="{% url 'base:views.login' %}">Login</a>#}
+{% endif %}
+
+<div>
+    Hello!
+</div>
